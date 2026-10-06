@@ -1,12 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WAK Health & Home Care Abbottabad</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="WAK Health & Home Care Abbottabad — professional home nursing, patient care, physiotherapy and doctor home visits.">
+<meta name="theme-color" content="#063B67">
+<title>WAK Health & Home Care | Abbottabad</title>
+<style>
+:root{
+ --navy:#063B67;--blue:#087CB5;--green:#25A65A;--ink:#10243a;--muted:#607286;
+ --line:#e5edf3;--soft:#f5f9fc;--white:#fff;--shadow:0 18px 50px rgba(7,43,70,.10);
+ --radius:20px;--max:1180px;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.65}
+a{text-decoration:none;color:inherit}.container{width:min(var(--max),92%);margin:auto}
+.topbar{background:var(--navy);color:#fff;font-size:13px}.topbar .inner{min-height:40px;display:flex;justify-content:space-between;align-items:center;gap:16px}.toplinks{display:flex;gap:20px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(229,237,243,.9)}
+.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px}.brand img{width:56px;height:56px;object-fit:contain}.brand strong{display:block;font-size:17px;letter-spacing:.2px;color:var(--navy)}.brand span{font-size:11px;color:var(--muted);letter-spacing:1.3px;text-transform:uppercase}
+nav{display:flex;align-items:center;gap:24px;font-size:14px;font-weight:650;color:#30465a}nav a:hover{color:var(--blue)}.navcta{background:var(--navy);color:#fff!important;padding:11px 16px;border-radius:999px}
+.menu{display:none;border:0;background:#eef5f9;border-radius:12px;padding:10px;font-size:20px}
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#f4f9fc 0%,#fff 54%,#eef8f2 100%);padding:82px 0 72px}
+.hero:before{content:"";position:absolute;width:480px;height:480px;border-radius:50%;background:rgba(8,124,181,.08);right:-180px;top:-170px}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:55px;align-items:center;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--green);font-weight:800;text-transform:uppercase;letter-spacing:1.8px;font-size:12px}.eyebrow:before{content:"";width:26px;height:2px;background:var(--green)}
+h1{font-size:clamp(42px,6vw,72px);line-height:1.03;letter-spacing:-2.5px;margin:18px 0;color:var(--navy)}.hero p{font-size:18px;color:var(--muted);max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 20px;border-radius:999px;font-weight:800;border:1px solid transparent}.btn.primary{background:var(--navy);color:#fff}.btn.secondary{background:#fff;border-color:#dbe7ee;color:var(--navy)}.btn.green{background:var(--green);color:#fff}
+.hero-card{background:#fff;border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);padding:18px}.hero-card img{width:100%;height:430px;object-fit:cover;border-radius:20px;display:block}.hero-badge{display:flex;align-items:center;justify-content:space-between;padding:15px 5px 2px;gap:15px}.hero-badge b{color:var(--navy)}.hero-badge span{font-size:13px;color:var(--muted)}
+.trust{border-bottom:1px solid var(--line);background:#fff}.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}.trust-item{padding:22px 18px;text-align:center;border-right:1px solid var(--line)}.trust-item:last-child{border:0}.trust-item b{display:block;color:var(--navy);font-size:15px}.trust-item span{font-size:12px;color:var(--muted)}
+section{padding:92px 0}.section-head{max-width:720px;margin-bottom:38px}.section-head .eyebrow{margin-bottom:8px}.section-head h2{font-size:clamp(32px,4vw,48px);line-height:1.1;letter-spacing:-1.3px;color:var(--navy);margin:8px 0 14px}.section-head p{color:var(--muted);font-size:16px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about-panel{background:var(--soft);border-radius:28px;padding:38px;border:1px solid var(--line)}.about-panel h3{font-size:27px;color:var(--navy);margin-top:0}.check{display:flex;gap:12px;margin:17px 0}.check i{width:24px;height:24px;border-radius:50%;background:#e5f6ec;color:var(--green);font-style:normal;display:grid;place-items:center;font-weight:900;flex:none}
+.services{background:var(--soft)}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:27px;box-shadow:0 8px 30px rgba(7,43,70,.05);transition:.2s}.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.icon{width:48px;height:48px;border-radius:14px;background:#eaf5fb;color:var(--blue);display:grid;place-items:center;font-size:22px;margin-bottom:18px}.card h3{margin:0 0 9px;color:var(--navy);font-size:19px}.card p{margin:0;color:var(--muted);font-size:14px}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.value{border-top:3px solid var(--blue);padding:24px;background:#fff;border:1px solid var(--line);border-radius:18px}.value h3{color:var(--navy);margin:0 0 8px}.value p{color:var(--muted);margin:0;font-size:14px}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.person{border:1px solid var(--line);border-radius:20px;padding:24px;background:#fff}.person .role{color:var(--green);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.7px}.person h3{font-size:20px;color:var(--navy);margin:8px 0}.person p{margin:0;color:var(--muted);font-size:14px}.founder{display:grid;grid-template-columns:330px 1fr;gap:36px;align-items:center;background:var(--navy);color:#fff;border-radius:30px;padding:28px}.founder img{width:100%;height:360px;object-fit:cover;border-radius:22px}.founder-photo{display:block}.founder h2{font-size:42px;line-height:1.1;margin:8px 0 14px}.founder p{color:#d9e6ef}.founder .role{color:#7be09d;font-weight:800;text-transform:uppercase;letter-spacing:1.2px;font-size:12px}
+.contact{background:var(--soft)}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:20px}.contact-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px}.contact-line{padding:15px 0;border-bottom:1px solid var(--line)}.contact-line:last-child{border:0}.contact-line small{display:block;color:var(--muted);text-transform:uppercase;letter-spacing:1px;font-weight:800;font-size:10px}.contact-line a,.contact-line b{color:var(--navy);font-size:16px}.map{min-height:100%;background:linear-gradient(135deg,#dfeef5,#f0f8f2);border-radius:22px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;padding:35px}.map b{display:block;font-size:22px;color:var(--navy);margin-bottom:8px}.map p{color:var(--muted);margin:0}
+.cta{padding:0 0 92px}.cta-box{background:linear-gradient(110deg,var(--navy),#0b6f9c);color:#fff;border-radius:30px;padding:45px;display:flex;align-items:center;justify-content:space-between;gap:30px}.cta-box h2{font-size:36px;line-height:1.1;margin:0 0 10px}.cta-box p{margin:0;color:#dcebf3}.cta-box .btn{background:#fff;color:var(--navy)}
+footer{background:#061f35;color:#cbdbe6;padding:50px 0 24px}.footgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}.footbrand{display:flex;gap:13px;align-items:center}.footbrand img{width:62px;height:62px;object-fit:contain}.footbrand b{color:#fff;font-size:17px}.footgrid h4{color:#fff;margin:0 0 13px}.footgrid a{display:block;margin:7px 0;font-size:13px}.copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:35px;padding-top:18px;font-size:12px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.float-wa{position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25D366;color:#fff;font-size:26px;box-shadow:0 12px 30px rgba(0,0,0,.2)}
+@media(max-width:900px){nav{display:none}.menu{display:block}.hero-grid,.split,.contact-grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.team-grid{grid-template-columns:repeat(2,1fr)}.trust-grid{grid-template-columns:repeat(2,1fr)}.trust-item:nth-child(2){border-right:0}.trust-item{border-bottom:1px solid var(--line)}.founder{grid-template-columns:1fr}.founder img{height:420px}.cta-box{display:block}.cta-box .btn{margin-top:22px}}
+@media(max-width:560px){.topbar .inner{justify-content:center}.toplinks{display:none}.brand span{display:none}.hero{padding:55px 0}.hero-card img{height:330px}section{padding:68px 0}.cards,.team-grid,.values{grid-template-columns:1fr}.trust-grid{grid-template-columns:1fr 1fr}.founder{padding:18px}.founder img{height:330px}.founder h2{font-size:32px}.cta-box{padding:30px}.footgrid{grid-template-columns:1fr}}
+
+.brand-logo{width:64px!important;height:64px!important;object-fit:contain}
+@media(max-width:560px){.brand-logo{width:54px!important;height:54px!important}.hero-logo{width:190px}.hero-photo-wrap img{height:260px}}
+
+.hero-visual{min-height:390px;border-radius:24px;background:linear-gradient(145deg,#f5fbfd,#eaf6f5);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px;border:1px solid var(--line);box-shadow:0 18px 50px rgba(10,66,98,.08)}
+.hero-visual-icon{width:116px;height:116px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#0b4f7a,#16a873);color:#fff;font-size:30px;font-weight:800;letter-spacing:2px;box-shadow:0 14px 35px rgba(11,79,122,.18)}
+.hero-visual-title{margin-top:24px;font-size:25px;font-weight:800;color:#0b4168}
+.hero-visual-sub{margin-top:10px;color:#557080;font-size:15px;max-width:320px}
+</style>
 </head>
 <body>
-  <h1>WAK Health & Home Care Abbottabad</h1>
-  <p>Professional healthcare and home care services at your doorstep.</p>
-</body>
-</html>
+<div class="topbar"><div class="container inner"><span>Professional Home Healthcare Services • Abbottabad</span><div class="toplinks"><a href="tel:+923305210011">0330-5210011</a><a href="mailto:wakhealthhomecareabbottabad@gmail.com">Email WAK</a></div></div></div>
+
+<header><div class="container nav">
+<a class="brand" href="#home"><img class="brand-logo" src="assets/wak-logo-clean.png" alt="WAK Health & Home Care logo"><div><strong>WAK Health & Home Care</strong><span>Abbottabad • Pakistan</span></div></a>
+<nav><a href="#about">About</a><a href="#services">Services</a><a href="#team">Our Team</a><a href="#founder">Leadership</a><a href="#contact">Contact</a><a class="navcta" href="https://wa.me/923305210011?text=Hello%20WAK%20Health%20%26%20Home%20Care%2C%20I%20would%20like%20to%20enquire%20about%20home%20healthcare%20services.">Request Care</a></nav>
+<button class="menu" onclick="alert('Please use the navigation links above or scroll through the page.')">☰</button>
+</div></header>
+
+<main id="home">
+<section class="hero"><div class="container hero-grid">
+<div><div class="eyebrow">Home healthcare • Established 01 September 2026</div>
+<h1>Professional care.<br>Closer to home.</h1>
+<p>WAK Health & Home Care brings qualified and trained healthcare professionals to the patient's doorstep—combining compassionate support, professional standards and personalized home-based care.</p>
+<div class="actions"><a class="btn primary" href="https://wa.me/923305210011?text=Hello%20WAK%20Health%20%26%20Home%20Care%2C%20I%20would%20like%20to%20book%20home%20care.">Request Home Care →</a><a class="btn secondary" href="#services">Explore Services</a></div>
+</div>
+<div class="hero-card"><div class="hero-visual"><div class="hero-visual-icon">WAK</div><div class="hero-visual-title">Professional Home Healthcare</div><div class="hero-visual-sub">Qualified care • Compassion • Reliability</div></div><div class="hero-badge"><div><b>WAK Health & Home Care</b><br><span>Home Care Today • Healthier Tomorrow</span></div><span>24/7</span></div></div>
+</div></section>
+
+<div class="trust"><div class="container trust-grid"><div class="trust-item"><b>24/7 Care Support</b><span>Dependable home healthcare</span></div><div class="trust-item"><b>Qualified Professionals</b><span>Clinical & compassionate care</span></div><div class="trust-item"><b>Patient-Centered</b><span>Care built around individual needs</span></div><div class="trust-item"><b>Abbottabad</b><span>Serving families at home</span></div></div></div>
+
+<section id="about"><div class="container split"><div><div class="section-head"><div class="eyebrow">About WAK</div><h2>Healthcare designed around the patient.</h2><p>WAK Health & Home Care Abbottabad is a dedicated home healthcare organization committed to bringing professional healthcare services beyond the walls of a hospital.</p></div><div class="check"><i>✓</i><div><b>Professional & compassionate</b><br><span>Care delivered with dignity, respect and attention to individual needs.</span></div></div><div class="check"><i>✓</i><div><b>Closer to families</b><br><span>Healthcare support in the comfort and familiarity of home.</span></div></div><div class="check"><i>✓</i><div><b>Continuity of care</b><br><span>A dependable approach to nursing, rehabilitation and medical home visits.</span></div></div></div>
+<div class="about-panel"><h3>Our commitment</h3><p>We aim to make quality healthcare more accessible, more personal and closer to home while maintaining professional standards and a patient-centered approach.</p><div class="values" style="grid-template-columns:1fr;margin-top:25px"><div class="value"><h3>Our Mission</h3><p>To deliver safe, compassionate and professional healthcare at home, supporting patients and families with dependable care and respect for dignity.</p></div><div class="value"><h3>Our Vision</h3><p>To become a trusted and leading home healthcare organization in the region, recognized for professional standards and patient-centered service.</p></div></div></div>
+</div></section>
+
+<section id="services" class="services"><div class="container"><div class="section-head"><div class="eyebrow">Our Services</div><h2>Expert support, delivered at home.</h2><p>Our services are designed to support patients and families with professional healthcare assistance in a familiar environment.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">✚</div><h3>Home Nursing Care</h3><p>Professional nursing and patient-care support for elderly, bedridden and recovering patients at home.</p></div>
+<div class="card"><div class="icon">♥</div><h3>Patient Care</h3><p>Individualized home healthcare support tailored to each patient's condition, comfort and care needs.</p></div>
+<div class="card"><div class="icon">↗</div><h3>Physiotherapy at Home</h3><p>Home-based physiotherapy and rehabilitation focused on mobility, strength and functional recovery.</p></div>
+<div class="card"><div class="icon">⌁</div><h3>Doctor Home Visits</h3><p>Professional medical consultation and follow-up care at home through scheduled doctor visits.</p></div>
+</div></div></section>
+
+<section><div class="container"><div class="section-head"><div class="eyebrow">Why WAK</div><h2>A care experience built on trust.</h2></div><div class="values"><div class="value"><h3>Patient Safety</h3><p>Safety, dignity and responsible care remain central to our approach.</p></div><div class="value"><h3>Personalized Care</h3><p>We recognize that every patient and every family has different needs.</p></div><div class="value"><h3>Professionalism</h3><p>Qualified healthcare professionals committed to dependable home-based support.</p></div></div></div></section>
+
+<section id="team" class="services"><div class="container"><div class="section-head"><div class="eyebrow">Our Professional Team</div><h2>Qualified people behind every visit.</h2><p>WAK brings together healthcare professionals across nursing, physiotherapy and family medicine.</p></div>
+<div class="team-grid">
+<div class="person"><div class="role">Senior Physiotherapist</div><h3>Dr. Mahnoor Khan Jahangiri, PT</h3><p>DPT — AUST | Female Rehab Specialist | Senior Physiotherapist | Home Rehabilitation Care</p></div>
+<div class="person"><div class="role">Senior Physiotherapist</div><h3>Dr. Sumbal Maqsood, PT</h3><p>DPT — KEMU, Mayo Hospital Lahore | Female Rehab Specialist | Senior Physiotherapist | Home Rehabilitation Care</p></div>
+<div class="person"><div class="role">Family Physician</div><h3>Dr. Farooq Hassan</h3><p>MBBS — Ayub Medical College | Diploma in Family Medicine | Family Physician | Home Visit Medical Care</p></div>
+<div class="person"><div class="role">Registered Nurse</div><h3>Alishba Anjum</h3><p>BS Nursing | Registered Nurse | Professional Nursing Care | Home Healthcare Services</p></div>
+<div class="person"><div class="role">Registered Nurse</div><h3>Kashan Waheed</h3><p>BS Nursing | Registered Nurse | Professional Nursing Care | Home Healthcare Services</p></div>
+<div class="person"><div class="role">Registered Nurse</div><h3>Muhammad Umar Khankhail</h3><p>BS Nursing | Registered Nurse | Professional Nursing Care | Home Healthcare Services</p></div>
+</div></div></section>
+
+<section id="founder"><div class="container"><div class="founder"><div><img src="assets/waqas-ahmad-khan.jpg" alt="Waqas Ahmad Khan — Founder & Care Coordinator" class="founder-photo"><small style="display:block;color:#b9d0df;text-align:center;margin-top:8px">Waqas Ahmad Khan • Founder & Care Coordinator</small></div><div><div class="role">Founder & Care Coordinator</div><h2>Waqas Ahmad Khan</h2><p>WAK Health & Home Care was established with a clear commitment to bringing professional healthcare support closer to patients and their families. Under the direction of its founder and care coordinator, WAK focuses on dependable home-based care, professional coordination and a respectful patient experience.</p><p><b>Home Care Today • Healthier Tomorrow</b></p></div></div></div></section>
+
+<section id="contact" class="contact"><div class="container"><div class="section-head"><div class="eyebrow">Contact WAK</div><h2>Care starts with a conversation.</h2><p>Reach our team to discuss home nursing, patient care, physiotherapy or a doctor home visit.</p></div><div class="contact-grid"><div class="contact-card">
+<div class="contact-line"><small>Phone / WhatsApp</small><a href="tel:+923305210011">0330-5210011</a></div>
+<div class="contact-line"><small>Email</small><a href="mailto:wakhealthhomecareabbottabad@gmail.com">wakhealthhomecareabbottabad@gmail.com</a></div>
+<div class="contact-line"><small>Address</small><b>Mousa Zai Colony, Near Valley Medical Complex, Mirpur, Abbottabad, Khyber Pakhtunkhwa, Pakistan</b></div>
+<div class="contact-line"><small>Availability</small><b>24/7 Patient Care Support</b></div>
+<div class="actions"><a class="btn green" href="https://wa.me/923305210011?text=Hello%20WAK%20Health%20%26%20Home%20Care%2C%20I%20would%20like%20to%20enquire%20about%20home%20healthcare%20services.">WhatsApp WAK</a><a class="btn secondary" href="tel:+923305210011">Call Now</a></div>
+</div><div class="map"><div><b>WAK Health & Home Care | Abbottabad</b><p>Mousa Zai Colony, Near Valley Medical Complex, Mirpur, Abbottabad</p><p style="margin-top:14px"><a class="btn secondary" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Mousa%20Zai%20Colony%20Near%20Valley%20Medical%20Complex%20Mirpur%20Abbottabad">Open in Google Maps →</a></p></div></div></div></div></section>
+
+<section class="cta"><div class="container"><div class="cta-box"><div><h2>Professional care, right where you need it.</h2><p>Speak with WAK Health & Home Care about your home healthcare needs.</p></div><a class="btn" href="https://wa.me/923305210011?text=Hello%20WAK%20Health%20%26%20Home%20Care%2C%20I%20need%20home%20healthcare%20services.">Start an Enquiry →</a></div></div></section>
+</main>
+
+<footer><div class="container"><div class="footgrid"><div><div class="footbrand"><img src="assets/wak-logo-clean.png" alt="WAK logo"><div><b>WAK Health & Home Care</b><br><span>Abbottabad, Pakistan</span></div></div><p style="font-size:13px;max-width:430px">Qualified & trained healthcare professionals at your doorstep. Home Care Today • Healthier Tomorrow.</p></div><div><h4>Explore</h4><a href="#about">About WAK</a><a href="#services">Services</a><a href="#team">Professional Team</a><a href="#founder">Leadership</a></div><div><h4>Connect</h4><a href="https://www.facebook.com/share/1EGDYe2nnv/" target="_blank">Facebook</a><a href="https://www.instagram.com/wak.homecare" target="_blank">Instagram</a><a href="https://www.tiktok.com/@wakhealth_homecare" target="_blank">TikTok</a><a href="mailto:wakhealthhomecareabbottabad@gmail.com">Email</a></div></div><div class="copyright"><span>© 2026 WAK Health & Home Care Abbottabad. All rights reserved.</span><span>Established 01 September 2026</span></div></div></footer>
+<a class="float-wa" href="https://wa.me/923305210011?text=Hello%20WAK%20Health%20%26%20Home%20Care%2C%20I%20would%20like%20to%20enquire%20about%20your%20services." aria-label="WhatsApp WAK">◔</a>
+</body></html>
